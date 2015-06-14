@@ -33,6 +33,10 @@
     CCNode *_ground2;
     NSArray *_grounds;
     
+    CCNode *_background1;
+    CCNode *_background2;
+    NSArray *_backgrounds;
+    
     CCNode *_cloud1;
     CCNode *_cloud2;
     NSArray *_clouds;
@@ -59,6 +63,7 @@
     self.userInteractionEnabled = TRUE;
     
     _grounds = @[_ground1, _ground2];
+    _backgrounds = @[_background1, _background2];
     _clouds = @[_cloud1, _cloud2];
     _bushes = @[_bush1, _bush2];
     
@@ -85,6 +90,12 @@
         // set collision type
         ground.physicsBody.collisionType = @"level";
         ground.zOrder = DrawingOrderGround;
+    }
+    
+    for (CCNode *background in _backgrounds) {
+        // set collision type
+        background.physicsBody.collisionType = @"level";
+        background.zOrder = DrawingOrderGround;
     }
     
     
@@ -190,6 +201,19 @@
         // if the left corner is one complete width off the screen, move it to the right
         if (groundScreenPosition.x <= (-1 * ground.contentSize.width)) {
             ground.position = ccp(ground.position.x + 2 * ground.contentSize.width, ground.position.y);
+        }
+    }
+    
+    // loop the background
+    for (CCNode *background in _backgrounds) {
+        // get the world position of the background
+        CGPoint backgroundWorldPosition = [physicsNode convertToWorldSpace:background.position];
+        // get the screen position of the background
+        CGPoint backgroundScreenPosition = [self convertToNodeSpace:backgroundWorldPosition];
+        
+        // if the left corner is one complete width off the screen, move it to the right
+        if (backgroundScreenPosition.x <= (-1 * background.contentSize.width)) {
+            background.position = ccp(background.position.x + 2 * background.contentSize.width, background.position.y);
         }
     }
     
