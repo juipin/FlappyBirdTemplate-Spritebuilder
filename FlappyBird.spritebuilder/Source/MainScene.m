@@ -22,6 +22,10 @@
     CCNode *_bush2;
     NSArray *_bushes;
     
+    CCNode *_background1;
+    CCNode *_background2;
+    NSArray *_backgrounds;
+    
     NSTimeInterval _sinceTouch;
     
     NSMutableArray *_obstacles;
@@ -178,6 +182,20 @@
             // move it to the right
             if (cloud.position.x <= (-1 * cloud.contentSize.width)) {
                 cloud.position = ccp(cloud.position.x + 
+                                     2 * cloud.contentSize.width, cloud.position.y);
+            }
+        }
+        
+        // move and loop the backgrounds
+        for (CCNode *cloud in _clouds) {
+            // move the cloud
+            cloud.position = ccp(cloud.position.x -
+                                 (character.physicsBody.velocity.x * delta), cloud.position.y);
+            
+            // if the left corner is one complete width off the screen,
+            // move it to the right
+            if (cloud.position.x <= (-1 * cloud.contentSize.width)) {
+                cloud.position = ccp(cloud.position.x +
                                      2 * cloud.contentSize.width, cloud.position.y);
             }
         }
