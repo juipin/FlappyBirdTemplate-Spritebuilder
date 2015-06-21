@@ -25,6 +25,7 @@
 @implementation MainScene {
     CGPoint _cloudParallaxRatio;
     CGPoint _bushParallaxRatio;
+    CGPoint _backgroundParallaxRatio;
     
     CCNode *_parallaxContainer;
     CCParallaxNode *_parallaxBackground;
@@ -73,6 +74,7 @@
     // Note that the bush ratio is larger than the cloud
     _bushParallaxRatio = ccp(0.9, 1);
     _cloudParallaxRatio = ccp(0.5, 1);
+    _backgroundParallaxRatio = ccp(0.9, 1);
     
     for (CCNode *bush in _bushes) {
         CGPoint offset = bush.position;
@@ -94,8 +96,11 @@
     
     for (CCNode *background in _backgrounds) {
         // set collision type
-        background.physicsBody.collisionType = @"level";
-        background.zOrder = DrawingOrderGround;
+        //background.physicsBody.collisionType = @"level";
+        //background.zOrder = DrawingOrderGround;
+        CGPoint offset = background.position;
+        [self removeChild:background];
+        [_parallaxBackground addChild:background z:0 parallaxRatio:_backgroundParallaxRatio positionOffset:offset];
     }
     
     
