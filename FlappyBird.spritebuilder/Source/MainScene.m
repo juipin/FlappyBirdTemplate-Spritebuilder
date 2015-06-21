@@ -96,11 +96,11 @@
     
     for (CCNode *background in _backgrounds) {
         // set collision type
-        //background.physicsBody.collisionType = @"level";
-        //background.zOrder = DrawingOrderGround;
-        CGPoint offset = background.position;
-        [self removeChild:background];
-        [_parallaxBackground addChild:background z:0 parallaxRatio:_backgroundParallaxRatio positionOffset:offset];
+        background.physicsBody.collisionType = @"level";
+        background.zOrder = DrawingOrderGround;
+        //CGPoint offset = background.position;
+        //[self removeChild:background];
+        //[_parallaxBackground addChild:background z:0 parallaxRatio:_backgroundParallaxRatio positionOffset:offset];
     }
     
     
