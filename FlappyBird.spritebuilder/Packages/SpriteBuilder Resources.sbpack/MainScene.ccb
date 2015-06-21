@@ -485,7 +485,7 @@
 								<key>type</key>
 								<string>Float</string>
 								<key>value</key>
-								<real>0.10000000149011612</real>
+								<real>0.30000001192092896</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -497,7 +497,7 @@
 									<real>1</real>
 									<real>1</real>
 									<real>1</real>
-									<real>0.10000000149011612</real>
+									<real>0.30000001192092896</real>
 								</array>
 							</dict>
 							<dict>
@@ -603,7 +603,7 @@
 								<key>type</key>
 								<string>Float</string>
 								<key>value</key>
-								<real>0.10000000149011612</real>
+								<real>0.30000001192092896</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -615,7 +615,7 @@
 									<real>1</real>
 									<real>1</real>
 									<real>1</real>
-									<real>0.10000000149011612</real>
+									<real>0.30000001192092896</real>
 								</array>
 							</dict>
 							<dict>
