@@ -440,8 +440,8 @@
 								<string>Point</string>
 								<key>value</key>
 								<array>
-									<real>-0.090818755328655243</real>
-									<real>0.4769585132598877</real>
+									<real>-0.032015852630138397</real>
+									<real>0.47565972805023193</real>
 								</array>
 							</dict>
 							<dict>
@@ -451,7 +451,7 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>1.1180000305175781</real>
+									<real>3.0221226215362549</real>
 									<real>1.1102309226989746</real>
 									<false/>
 									<integer>0</integer>
