@@ -485,7 +485,7 @@
 								<key>type</key>
 								<string>Float</string>
 								<key>value</key>
-								<real>0.30000001192092896</real>
+								<real>0.40000000596046448</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -497,7 +497,7 @@
 									<real>1</real>
 									<real>1</real>
 									<real>1</real>
-									<real>0.30000001192092896</real>
+									<real>0.40000000596046448</real>
 								</array>
 							</dict>
 							<dict>
@@ -509,8 +509,6 @@
 								<array/>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -577,17 +575,6 @@
 							</dict>
 							<dict>
 								<key>name</key>
-								<string>skew</string>
-								<key>type</key>
-								<string>FloatXY</string>
-								<key>value</key>
-								<array>
-									<real>0.087426140904426575</real>
-									<real>0.0</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
 								<string>spriteFrame</string>
 								<key>type</key>
 								<string>SpriteFrame</string>
@@ -614,7 +601,7 @@
 								<key>type</key>
 								<string>Float</string>
 								<key>value</key>
-								<real>0.30000001192092896</real>
+								<real>0.40000000596046448</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -626,7 +613,7 @@
 									<real>1</real>
 									<real>1</real>
 									<real>1</real>
-									<real>0.30000001192092896</real>
+									<real>0.40000000596046448</real>
 								</array>
 							</dict>
 							<dict>
@@ -638,6 +625,8 @@
 								<array/>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
